@@ -1,0 +1,15 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{tikzpicture}[x=3.84in,y=1.2in]
+  % One node that contains a 3.2in-wide box; images scale to \linewidth
+  \node[anchor=north west, inner sep=0] at (0,0) {%
+    \begin{minipage}{3.84in}
+      \includegraphics[height=1.12in,pagebox=cropbox]{forest_plot_tp.pdf}\par
+      \vspace{0.08in}
+      \includegraphics[height=1.28in,pagebox=cropbox]{forest_plot_myocarditis.pdf}%
+    \end{minipage}%
+  };
+\end{tikzpicture}
+\end{document}

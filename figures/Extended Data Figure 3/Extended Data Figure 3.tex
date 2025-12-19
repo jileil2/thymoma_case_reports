@@ -1,0 +1,21 @@
+
+
+
+
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{tikzpicture}[x=3.2in,y=1.6in]
+  % One node that contains a 3.2in-wide box; images scale to \linewidth
+  \node[anchor=north west, inner sep=0] at (0,0) {%
+    \begin{minipage}{3.2in}
+    \includegraphics[height=1.12in,pagebox=cropbox]{forest_plot_sex.pdf}
+      \includegraphics[height=1.6in,pagebox=cropbox]{age_cancer.pdf}\par
+ 
+      \includegraphics[height=1.12in,pagebox=cropbox]{treatment_cancer.pdf}%
+    \end{minipage}%
+  };
+\end{tikzpicture}
+\end{document}
+

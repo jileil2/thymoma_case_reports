@@ -1,0 +1,18 @@
+
+
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{tikzpicture}[x=3.84in,y=1.12in]
+  % One node that contains a 3.2in-wide box; images scale to \linewidth
+  \node[anchor=north west, inner sep=0] at (0,0) {%
+    \begin{minipage}{3.84in}
+    \includegraphics[height=1.12in,pagebox=cropbox]{forest_plot_achr_test.pdf}
+      \includegraphics[height=1.12in,pagebox=cropbox]{forest_plot_striat_test.pdf}\par
+      \includegraphics[height=1.12in,pagebox=cropbox]{forest_plot_op.pdf}%
+    \end{minipage}%
+  };
+\end{tikzpicture}
+\end{document}
+
