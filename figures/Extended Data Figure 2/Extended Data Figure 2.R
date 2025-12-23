@@ -28,6 +28,7 @@ ggplot(df, aes(x = Age)) +
     y = "Frequency",
     title = expression(bold("Age at MG Onset"))
   ) +
+  coord_cartesian(ylim = c(0, 55)) + 
   theme_minimal(base_size = 16) +
   theme(
     panel.grid = element_blank(),
@@ -36,7 +37,7 @@ ggplot(df, aes(x = Age)) +
     axis.text = element_text(color = "black", size = 17),       # Bigger tick labels
     axis.title.x = element_text(color = "black", face = "bold", size = 18),
     axis.title.y = element_text(color = "black", face = "bold", size = 18),
-    plot.title = element_text(hjust = 0, face = "bold", size = 18),
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 18),
     panel.border = element_rect(color = "black", fill = NA, size = 3),
     plot.margin = margin(t = 10, r = 30, b = 10, l = 10)
   )
@@ -51,6 +52,7 @@ ggplot(df_female, aes(x = Age)) +
     color = "magenta",   # Match base R border color
     linewidth = 1.5
   ) +
+  coord_cartesian(ylim = c(0, 30)) + 
   labs(
     x = expression(bold("Age (Female, N = 115)")),
     y = "Frequency",
@@ -80,6 +82,7 @@ ggplot(df_male, aes(x = Age)) +
     color = "deepskyblue",   # Match base R border color
     linewidth = 1.5
   ) +
+  coord_cartesian(ylim = c(0, 25)) + 
   labs(
     x = expression(bold("Age (Male, N = 76)")),
     y = "Frequency",
@@ -113,6 +116,7 @@ ggplot(df, aes(x = Age)) +
     y = "Frequency",
     title = "Age at Myositis Onset"
   ) +
+  coord_cartesian(ylim = c(0, 55)) + 
   theme_minimal(base_size = 16) +
   theme(
     panel.grid = element_blank(),
@@ -121,7 +125,7 @@ ggplot(df, aes(x = Age)) +
     axis.text = element_text(color = "black", size = 17),
     axis.title.x = element_text(color = "black", face = "bold", size = 18),
     axis.title.y = element_text(color = "black", face = "bold", size = 18),
-    plot.title = element_text(hjust = 0, face = "bold", size = 18),
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 18),
     panel.border = element_rect(color = "black", fill = NA, size = 3),
     plot.margin = margin(t = 10, r = 30, b = 10, l = 10)
   )
@@ -142,6 +146,7 @@ ggplot(df_female, aes(x = Age)) +
     y = "Frequency",
     title = ""
   ) +
+  coord_cartesian(ylim = c(0, 30)) + 
   theme_minimal(base_size = 16) +
   theme(
     panel.grid = element_blank(),
@@ -166,6 +171,7 @@ ggplot(df_male, aes(x = Age)) +
     linewidth = 1.5
   ) +
   scale_x_continuous(limits = c(0, 100)) + 
+  coord_cartesian(ylim = c(0, 25)) + 
   labs(
     x = expression(bold("Age (Male, N = 76)")),
     y = "Frequency",

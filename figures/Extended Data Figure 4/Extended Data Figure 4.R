@@ -72,7 +72,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("a. Myositis (overall incidence: 268/493, 57%)")),
+             title = expression(bold("a Myositis (overall incidence: 268/493, 57%)")),
              xlab = expression(bold("Association with myositis")),
              xlog = TRUE,
              boxsize = 0.35,
@@ -135,7 +135,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("b. Myocarditis (overall incidence: 298/493, 60%)")),
+             title = expression(bold("b Myocarditis (overall incidence: 298/493, 60%)")),
              xlab = expression(bold("Association with myocarditis")),
              xlog = TRUE,
              boxsize = .35,
@@ -198,7 +198,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("c. MG (overall incidence: 158/493, 32%)")),
+             title = expression(bold("c MG (overall incidence: 158/493, 32%)")),
              xlab = expression(bold("Association with MG")),
              xlog = TRUE,
              boxsize = 0.35,
@@ -263,7 +263,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("d. Concurrent myositis & myocarditis (overall incidence: 135/493, 27%)")),
+             title = expression(bold("d Concurrent myositis & myocarditis (overall incidence: 135/493, 27%)")),
              xlab = expression(bold("Association with concurrent myositis & myocarditis")),
              xlog = TRUE,
              boxsize = 0.35,
@@ -324,7 +324,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("e. Concurrent MG & myositis/myocarditis (overall incidence: 112/493, 22%)")),
+             title = expression(bold("e Concurrent MG & myositis/myocarditis (overall incidence: 112/493, 22%)")),
              xlab = expression(bold("Association with concurrent MG & myositis/myocarditis")),
              xlog = TRUE,
              boxsize = 0.35,
@@ -387,7 +387,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("f. Immunomodulators (overall prevalence: 262/490, 54%)")),
+             title = expression(bold("f Immunomodulators (overall prevalence: 262/490, 54%)")),
              xlab = expression(bold("Association with immunomodulators")),
              xlog = TRUE,
              boxsize = 0.35,
@@ -449,7 +449,7 @@ base_data <- tibble::tibble(mean  = mean, lower = lower, upper = upper,
 base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
-             title = expression(bold("g. Plasmapheresis (overall prevalence: 106/490, 22%)")), 
+             title = expression(bold("g Plasmapheresis (overall prevalence: 106/490, 22%)")), 
              xlim = c(0, 12),
              xlab = expression(bold("Association with plasmapheresis")),
              xlog = TRUE,
@@ -513,7 +513,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("h. Respiratory support (overall prevalence: 151/490, 31%)")), 
+             title = expression(bold("h Respiratory support (overall prevalence: 151/490, 31%)")), 
              xlab = expression(bold("Association with respiratory support")),
              xlog = TRUE,
              boxsize = 0.35,
@@ -575,7 +575,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("i. Cardiovascular treatments (overall prevalence: 194/490, 40%)")),
+             title = expression(bold("i Cardiovascular treatments (overall prevalence: 194/490, 40%)")),
              xlab = expression(bold("Association with cardiovascular treatments")),
              xlog = TRUE,
              boxsize = 0.35,
@@ -637,7 +637,7 @@ base_data |>
   forestplot(labeltext = c(variable, prop, OR, pvs),
              align = c("l", "c", "c", "c"),     # <-- Align columns
              xlim = c(0, 12),
-             title = expression(bold("j. irAE-related death & hospice care (overall rate: 147/489, 30%)")), 
+             title = expression(bold("j irAE-related death & hospice care (overall rate: 147/489, 30%)")), 
              xlab = expression(bold("Association with irAE-related death & hospice care")),
              xlog = TRUE,
              boxsize = 0.35,
