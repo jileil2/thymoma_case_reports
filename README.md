@@ -31,7 +31,6 @@ All code is provided to support transparency and reproducibility once the data a
 ├── Figures/
 │   ├── Figure 1/
 │   ├── Figure 2/
-│   ├── Figure 3/
 │   ├── Extended Data Figure 2/
 │   ├── Extended Data Figure 3/
 │   ├── Extended Data Figure 4/
